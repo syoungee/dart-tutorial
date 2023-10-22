@@ -12,4 +12,5 @@ void main(){
   print(name); // true
   print(name2); // sun young2
 
+  // dynamic type은 꼭 필요할 때만 쓰자.
 }

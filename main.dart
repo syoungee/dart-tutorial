@@ -1,16 +1,9 @@
+// without null safety:
+bool isEmpty(String? string) => string?.length == 0;
+
 void main(){
-  // dynamic types
-  // DART는 개발자 친화적인 언어이다.
-
-  var name; // dynamic type으로 지정된다.
-  name = 'sun young';
-  name = 22;
-  name = true;
-
-
-  dynamic name2 = 'sun young2';
-  print(name); // true
-  print(name2); // sun young2
-
-  // dynamic type은 꼭 필요할 때만 쓰자.
+  // null error는 컴파일 전에 잡아야함.
+  // 런타임에 잡으면 앱 사용도중 에러를 발견하는 것임.
+  // DART의 해결책? 
+  isEmpty(null);
 }

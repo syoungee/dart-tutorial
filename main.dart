@@ -1,13 +1,10 @@
 
 void main(){
-  late final String name;
-  // late 선언 시에 value를 모를 때 사용한다. 딱 1번만 할당이 가능함.
-  // do something, go to api
-  name = 'sun young';
-  name = 22; // error!
-  // The late final local variable is already assigned.
-  // Try removing the 'final' modifier, or don't reassign the value.
-
-  // assigned 되기 전에 접근 불가능
-  // 두 번 할당 불가능
+  // Recap
+  // Dart의 스타일가이드 - var를 최대한 많이 쓰고 int등은 class의 property를 작성할 때 사용하는 게 권장된다.
+  int i = 12;
+  var name = 'la';
+  i = 12121212;
+  name = 'lalalalala';
+  // 메소드나 작은 함수 안에서 지역변수를 선언할 때는 var 사용 권장
 }

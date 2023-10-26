@@ -1,7 +1,8 @@
+String sayHello(String potato) => 'Hello $potato nice to meet you!';
+
+num plus(num a, num b) => a + b;
+
 void main() {
-  List<int> numbers = [1, 2, 3, 4];
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
-  print(numbers);
+  print(sayHello('sssss'));
+  print(plus(999, 1));
 }
